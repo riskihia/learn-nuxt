@@ -1,13 +1,12 @@
 <script setup>
 import { ref } from 'vue';
-
 // Define a reactive variable to store user input for bg color
 const bgColorInput = ref('blue-400');
 
 // Function to update bg color when user changes the input
-const updateBgColor = (color) => {
-    bgColorInput.value = color;
-}
+// const updateBgColor = (color) => {
+//     bgColorInput.value = color;
+// }
 
 // Function to generate the class value based on user input and default values
 const generateClassValue = () => {
