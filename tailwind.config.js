@@ -8,6 +8,13 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
+  safelist: [
+    'text-2xl',
+    'text-3xl',
+    {
+      pattern: /bg-+/,
+    },
+  ],
   theme: {
     extend: {},
   },
