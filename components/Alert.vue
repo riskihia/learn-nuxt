@@ -10,7 +10,7 @@ const userValue = Object.entries(dataUser).map(([key, value]) => {
     return `${key === 'bg' ? 'bg' : key}-${value}`;
 }).join(' ');
 
-console.log(userValue);
+// console.log(userValue);
 
 let defaultValue = {
     "bg" : "red-400",
@@ -23,7 +23,7 @@ const defaultValueString = Object.entries(defaultValue).map(([key, value]) => {
     return `${key === 'bg' ? 'bg' : key}-${value}`;
 }).join(' ');
 
-console.log(defaultValueString);
+// console.log(defaultValueString);
 
 // Merge dataUser into defaultValue
 let mergedStyles = { ...defaultValue };
@@ -34,14 +34,14 @@ Object.keys(dataUser).forEach(key => {
     }
 });
 
-console.log(mergedStyles);
+// console.log(mergedStyles);
 
 // Convert mergedStyles object to a string
 const classValue = Object.entries(mergedStyles).map(([key, value]) => {
     return `${key === 'bg' ? 'bg' : key}-${value}`;
 }).join(' ');
 
-console.log(classValue);
+// console.log(classValue);
 
 </script>
 

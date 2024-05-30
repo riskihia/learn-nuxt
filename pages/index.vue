@@ -1,6 +1,9 @@
-<script setup>
-    const {sayHello} = useUtils();
-    sayHello();
+<script setup lang="ts">
+    // const {sayHello} = useUtils();
+    // sayHello();
+
+    const { $sayHello } = useNuxtApp();
+    $sayHello("RISKI");
 </script>
 
 <template>

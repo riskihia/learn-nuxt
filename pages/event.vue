@@ -17,7 +17,7 @@ const generateClassValue = () => {
 }
 
 // Logging user input
-console.log(bgColorInput.value);
+// console.log(bgColorInput.value);
 
 // Your default value object
 let defaultValue = {
@@ -28,10 +28,10 @@ let defaultValue = {
 }
 
 // Logging default value
-console.log(defaultValue);
+// console.log(defaultValue);
 
 // Logging class value
-console.log(generateClassValue());
+// console.log(generateClassValue());
 
 </script>
 
