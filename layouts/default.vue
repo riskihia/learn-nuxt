@@ -1,6 +1,5 @@
 <template>
-    <div class="DefaultLayout">
-        <p>Default Layout</p>
+    <div class="w-full">
         <slot />
     </div>
 </template>
