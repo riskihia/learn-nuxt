@@ -8,11 +8,14 @@
                 <a href="/">HOME</a>
             </li>
             <li class="text-xl flex items-center px-3 cursor-pointer hover:bg-slate-200">
+                <a href="/project">PROJECT</a>
+            </li>
+            <li class="text-xl flex items-center px-3 cursor-pointer hover:bg-slate-200">
                 <a href="/about">ABOUT</a>
             </li>
             <li class="text-xl flex items-center px-3 cursor-pointer hover:bg-slate-200">
                 
-                <a href="/contat">CONTACT</a>
+                <a href="/contact">CONTACT</a>
             </li>
         </ul>
     </div>
