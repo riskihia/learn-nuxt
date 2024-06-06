@@ -37,10 +37,10 @@ const data = [
 
 const route = useRoute();
 let id = route.params.id;
-console.log(id);
+// console.log(id);
 
 const project = data[id];
-console.log(project);
+// console.log(project);
 
 </script>
 
