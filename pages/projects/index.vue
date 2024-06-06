@@ -1,7 +1,7 @@
 <script setup>
 const data = [
 {
-    "name" : "Project BMKG",
+    "name" : "Project BNI LIFE",
     "desc" : "<p class='py-1 text-base text-justify'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis qui officia mollitia magni quidem deleniti molestias maiores. Debitis eaque quidem inventore! Consequatur, esse amet vel pariatur culpa tempora voluptas fugiat!</p><p class='py-1 text-base text-justify'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis qui officia mollitia magni quidem deleniti molestias maiores. Debitis eaque quidem inventore! Consequatur, esse amet vel pariatur culpa tempora voluptas fugiat!</p>",
     "tectList" : {
         "github" : "black",
@@ -56,8 +56,10 @@ const data = [
             <template v-if="project.imagePosition === 'right'">
                 <div class="desc pr-10 flex flex-col">
                     <div>
-                        <h1 class="text-center text-2xl font-bold py-2"><a href="`/projects/${index}`">Project BNI LIFE</a></h1>
-                        <p class="py-1 text-base text-justify">{{ project.desc }}</p>
+                        <h1 class="text-center text-2xl font-bold py-2">
+                            <a href="/projects/0">{{project.name}}</a>
+                        </h1>
+                        <span v-html="project.desc" class="py-1 text-base text-justify"></span>
                     </div>
                     <div class="flex flex-wrap pt-10">
                         <span v-for="(color, tech) in project.tectList" :key="tech" class="rounded-full px-6 py-2 mr-4" :style="{ backgroundColor: color, color: 'white' }">{{ tech }}</span>
@@ -73,8 +75,10 @@ const data = [
                 </div>
                 <div class="desc pr-10 flex flex-col">
                     <div>
-                        <h1 class="text-center text-2xl font-bold py-2"><a href="/projects/">Project BNI LIFE</a></h1>
-                        <p class="py-1 text-base text-justify">{{ project.desc }}</p>
+                        <h1 class="text-center text-2xl font-bold py-2">
+                            <a href="/projects/1">{{project.name}}</a>
+                        </h1>
+                        <span v-html="project.desc" class="py-1 text-base text-justify"></span>
                     </div>
                     <div class="flex flex-wrap pt-10">
                         <span v-for="(color, tech) in project.tectList" :key="tech" class="rounded-full px-6 py-2 mr-4" :style="{ backgroundColor: color, color: 'white' }">{{ tech }}</span>
